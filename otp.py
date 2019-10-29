@@ -6,7 +6,7 @@ import random
 app=Flask(__name__)
 def send_confirmation_code(to_number):
     verification_code = generate_code()
-    send_sms(9603487813, verification_code)
+    send_sms("mobile number", verification_code)
     session['verification_code'] = verification_code
     return verification_code
 
